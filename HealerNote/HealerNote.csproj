@@ -174,7 +174,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -251,6 +250,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealerNote.Data\HealerNote.Data.csproj">
+      <Project>{fb010b80-0db7-49e4-9858-4ea50b80ad95}</Project>
+      <Name>HealerNote.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealerNote.Models\HealerNote.Models.csproj">
+      <Project>{e168229e-8bda-403f-8f12-47a717b8b33e}</Project>
+      <Name>HealerNote.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealerNote.Services\HealerNote.Services.csproj">
+      <Project>{2b38d5ea-b6f7-41b7-8038-9197b7eec9c4}</Project>
+      <Name>HealerNote.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
